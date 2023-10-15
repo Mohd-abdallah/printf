@@ -6,8 +6,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int char_count = 0;
-	int character;
+	int character, char_count = 0;
 	char *string;
 	va_list args;
 
