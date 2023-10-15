@@ -6,8 +6,8 @@
  */
 int _printf(const char *format, ...)
 {
-	int character, char_count = 0;
-	char *string;
+	int char_count = 0;
+	char *string, character;
 	va_list args;
 
 	va_start(args, format);
@@ -16,10 +16,8 @@ int _printf(const char *format, ...)
 	while (*format)
 	{
 		if (*format != '%')
-		{
 			write(1, format, 1);
 			char_count++;
-		}
 		else
 		{
 			format++;
@@ -45,5 +43,6 @@ int _printf(const char *format, ...)
 		}
 		format++;
 	}
+	va_end(args);
 	return (char_count);
 }
