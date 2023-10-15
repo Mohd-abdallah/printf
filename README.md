@@ -7,4 +7,13 @@ Team Members :
 Project description : ------------------
 A function called _printf which emulates the standared function printf.
 
+Task 0 :
+handling the specifiers :
+c
+s
+%
 
+Task 1 :
+handling the conversions:
+d
+i
