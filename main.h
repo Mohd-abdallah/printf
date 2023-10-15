@@ -15,7 +15,7 @@ int _printf(const char *format, ...);
 
 
 /* Macros */
-#define BUF-SIZE 1024;
+#define BUF_SIZE 1024;
 
 
 
