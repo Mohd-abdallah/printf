@@ -9,12 +9,13 @@
 
 
 /* Prototypes */
-
+int _printf(const char *format, ...);
 
 
 
 
 /* Macros */
+#define BUF-SIZE 1024;
 
 
 
