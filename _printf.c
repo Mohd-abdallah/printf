@@ -7,7 +7,6 @@
 int _printf(const char *format, ...)
 {
 	int char_count = 0;
-	char *string, character;
 	va_list args;
 
 	va_start(args, format);
@@ -20,6 +19,10 @@ int _printf(const char *format, ...)
 			write(1, format, 1);
 			char_count++;
 		}
+		/*else if (*format == '%')
+		{
+			return(-1);
+		}*/
 		else
 		{
 			format++;
@@ -32,15 +35,11 @@ int _printf(const char *format, ...)
 			}
 			else if (*format == 'c')
 			{
-				character = va_arg(args, int);
-				write(1, &character, 1);
-				char_count++;
+				handle_c(args);
 			}
 			else if (*format == 's')
 			{
-				string = va_arg(args, char *);
-				write(1, string, strlen(string));
-				char_count += strlen(string);
+				handle_s(args);
 			}
 		}
 		format++;

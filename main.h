@@ -6,11 +6,13 @@
 #include <stdarg.h>
 #include <string.h>
 #include <unistd.h>
-
+#include <stdlib.h>
 
 /* Prototypes */
 int _printf(const char *format, ...);
-
+int convert_to_binary(int n);
+int handle_c(va_list args);
+int handle_s(va_list args);
 
 
 
