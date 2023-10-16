@@ -8,10 +8,11 @@ int _printf(const char *format, ...)
 {
 	int char_count = 0;
 	char character;
+	char *string;
 	va_list args;
 
 	va_start(args, format);
-	if (format == NULL)
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	while (*format)
 	{
@@ -23,8 +24,6 @@ int _printf(const char *format, ...)
 		else
 		{
 			format++;
-			if (*format == '\0')
-				break;
 			if (*format == '%')
 			{
 				write(1, format, 1);
@@ -38,7 +37,9 @@ int _printf(const char *format, ...)
 			}
 			else if (*format == 's')
 			{
-				handle_s(args);
+				string = va_arg(args, char *);
+				write(1, string, strlen(string));
+				char_count += strlen(string);
 			}
 		}
 		format++;
