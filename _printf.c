@@ -42,6 +42,16 @@ int _printf(const char *format, ...)
 				write(1, string, strlen(string));
 				char_count += strlen(string);
 			}
+			else if (*format == 'd')
+			{
+				handle_d(args);
+				char_count++;
+			}
+			else if (*format == 'i')
+			{
+				handle_i(args);
+				char_count++;
+			}
 		}
 		format++;
 	}
