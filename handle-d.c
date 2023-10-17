@@ -1,14 +1,14 @@
 #include "main.h"
 /**
  * handle_d - prints decimal numbers
- * @args: argument to print in decimal format
+ * @args: list of arguments to be printed in decimal format
  * Return: number of characters printed
  */
 int handle_d(va_list args)
 {
 	int number = va_arg(args, int);
-	int  num, no = 1, pow = 1;
-	int lst = number % 10, digit;
+	int  num, digit, no = 1, pow = 1;
+	int lst = number % 10;
 
 	number = number / 10;
 	num = number;
