@@ -51,9 +51,9 @@ int _printf(const char *format, ...)
 				handle_i(args);
 				char_count++;
 			}
-			else is (*format == 'o')
+			else if (*format == 'o')
 			{
-				handle_o(args);
+				handle_oct(args);
 				char_count++;
 			}
 		}

@@ -31,6 +31,6 @@ int handle_oct(va_list args)
 	last_index = no_of_didits - 1;
 	for (i = last_index; i >= 0; i--)
 		_putchar(list_of_digits[i] + '0');
-	free (list_of_digits);
+	free(list_of_digits);
 	return (no_of_didits);
 }
