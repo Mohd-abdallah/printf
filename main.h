@@ -21,7 +21,7 @@ int handle_oct(va_list args);
 
 
 /* Macros */
-#define BUF_SIZE 1024;
+#define BUF_SIZE 1024
 
 
 
