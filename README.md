@@ -15,5 +15,5 @@ s
 
 Task 1 :
 handling the conversions:
-d
+d : using the function 'handle_d' in the file 'handle-d.c'
 i
