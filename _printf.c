@@ -36,10 +36,8 @@ int _printf(const char *format, ...)
 			}
 			else if (*format == 's')
 				handle_s(args);
-			else if (*format == 'd')
+			else if (*format == 'd' || *format == 'i')
 				handle_d(args);
-			else if (*format == 'i')
-				handle_i(args);
 			else if (*format == 'o')
 				handle_oct(args);
 		}
