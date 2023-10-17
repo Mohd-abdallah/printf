@@ -9,7 +9,7 @@
 int handle_oct(va_list args)
 {
 	unsigned int number = va_arg(args, unsigned int);
-	int i, int_size, last_index, no_of_didits = 0;
+	int i = 0, int_size, last_index, no_of_didits = 0;
 	int *list_of_digits;
 	unsigned int container;
 
@@ -23,14 +23,19 @@ int handle_oct(va_list args)
 	list_of_digits = malloc(int_size * no_of_didits);
 	if (list_of_digits == NULL)
 		return (-1);
-	for (i = 0; i < no_of_didits; i++)
+	while (i < no_of_didits)
 	{
 		list_of_digits[i] = container % 8;
 		container = container / 8;
+		i++;
 	}
 	last_index = no_of_didits - 1;
-	for (i = last_index; i >= 0; i--)
+	while (i >= 0)
+	{
+		i = last_index;
 		_putchar(list_of_digits[i] + '0');
+		i--;
+	}
 	free(list_of_digits);
 	return (no_of_didits);
 }
