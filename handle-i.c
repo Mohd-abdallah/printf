@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * handle_d - prints decimal numbers
- * @args: argument to print
+ * handle_i - prints integer numbers
+ * @args: argument to print in integer format
  * Return: number of characters printed
  */
 int handle_i(va_list args)
 {
 	int number = va_arg(args, int);
-	int num, lst = number % 10, digit, pow = 1;
-	int  i = 1;
+	int  num, i = 1, pow = 1;
+	int lst = number % 10, digit;
 
 	number = number / 10;
 	num = number;
@@ -37,6 +37,6 @@ int handle_i(va_list args)
 			i++;
 		}
 		_putchar(lst + '0');
-		return (i);
 	}
+	return (i);
 }
