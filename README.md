@@ -17,3 +17,9 @@ Task 1 :
 handling the conversions:
 d
 i
+
+Task 2 :
+handling the specifier :
+b
+
+
