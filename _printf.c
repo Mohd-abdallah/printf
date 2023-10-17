@@ -42,20 +42,11 @@ int _printf(const char *format, ...)
 				char_count += strlen(string);
 			}
 			else if (*format == 'd')
-			{
 				handle_d(args);
-				char_count++;
-			}
 			else if (*format == 'i')
-			{
 				handle_i(args);
-				char_count++;
-			}
 			else if (*format == 'o')
-			{
 				handle_oct(args);
-				char_count++;
-			}
 		}
 		format++;
 	}
