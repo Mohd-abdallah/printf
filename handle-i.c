@@ -7,7 +7,7 @@
 int handle_i(va_list args)
 {
 	int number = va_arg(args, int);
-	int  num, i = 1, pow = 1;
+	int  num, no = 1, pow = 1;
 	int lst = number % 10, digit;
 
 	number = number / 10;
@@ -18,7 +18,7 @@ int handle_i(va_list args)
 		num = -num;
 		number = -number;
 		lst = -lst;
-		i++;
+		no++;
 	}
 	if (num > 0)
 	{
@@ -34,9 +34,9 @@ int handle_i(va_list args)
 			_putchar(digit + '0');
 			num = num - (digit * pow);
 			pow = pow / 10;
-			i++;
+			no++;
 		}
 		_putchar(lst + '0');
 	}
-	return (i);
+	return (no);
 }
