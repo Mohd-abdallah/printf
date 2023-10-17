@@ -22,4 +22,10 @@ Task 2 :
 handling the specifier :
 b
 
+Task 3 :
+Handling the conversion specifiers:
 
+u
+o
+x
+X
