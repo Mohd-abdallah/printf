@@ -8,7 +8,6 @@ int _printf(const char *format, ...)
 {
 	int char_count = 0;
 	char character;
-	char *string;
 	va_list args;
 
 	va_start(args, format);
@@ -36,26 +35,11 @@ int _printf(const char *format, ...)
 				char_count++;
 			}
 			else if (*format == 's')
-			{
-				string = va_arg(args, char *);
-				write(1, string, strlen(string));
-				char_count += strlen(string);
-			}
+				handle_s(args);
 			else if (*format == 'd')
-			{
 				handle_d(args);
-				char_count++;
-			}
 			else if (*format == 'i')
-			{
 				handle_i(args);
-				char_count++;
-			}
-			else if (*format == 'o')
-			{
-				handle_oct(args);
-				char_count++;
-			}
 		}
 		format++;
 	}
