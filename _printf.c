@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 			else if (*format == 'd')
 				handle_d(args);
 			else if (*format == 'i')
-				handle_d(args);
+				handle_i(args);
 		}
 		format++;
 	}
