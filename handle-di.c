@@ -37,8 +37,8 @@ int handle_d(va_list args)
 			char_count++;
 		}
 		_putchar(l + '0');
-		return (char_count);
 	}
+                return (char_count);
 }
 
 
@@ -80,6 +80,6 @@ int handle_i(va_list args)
 			char_count++;
 		}
 		_putchar(l + '0');
-		return (char_count);
 	}
+	return (char_count);
 }
