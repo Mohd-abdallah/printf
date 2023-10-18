@@ -16,7 +16,7 @@ int handle_s(va_list args)
 	}
 	else
 	{
-		char_count = strlen(s);
+		char_count = strlen(string);
 		for (i = 0; i < char_count; i++)
 		{
 			_putchar(string[i]);
