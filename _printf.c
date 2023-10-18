@@ -37,9 +37,9 @@ int _printf(const char *format, ...)
 			else if (*format == 's')
 				handle_s(args);
 			else if (*format == 'd')
-				handle_d(args);
+				char_count = handle_d(args);
 			else if (*format == 'i')
-				handle_i(args);
+				char_count = handle_i(args);
 		}
 		format++;
 	}
