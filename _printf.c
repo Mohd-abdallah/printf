@@ -40,8 +40,6 @@ int _printf(const char *format, ...)
 				handle_d(args);
 			else if (*format == 'i')
 				handle_i(args);
-			else if (*format == 'r')
-				handle_r(args);
 		}
 		format++;
 	}
