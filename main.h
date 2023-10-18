@@ -1,14 +1,14 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Standard Libraries */
+/* used Standard Libraries */
 #include <stdio.h>
 #include <stdarg.h>
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
 
-/* Prototypes */
+/* included functions Prototypes */
 int _putchar(char c);
 int _printf(const char *format, ...);
 int handle_d(va_list args);
