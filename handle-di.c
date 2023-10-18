@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * handle_d - prints decimal numbers
+ * handle_d - a function that handles the conversion specifiers %d, %i
  * @args: list of arguments to be printed in decimal format
  * Return: number of characters printed
  */
