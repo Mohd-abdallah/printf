@@ -20,12 +20,12 @@ i
 
 Task 2 :
 handling the specifier :
-b
+b : binary conversion
 
 Task 3 :
 Handling the conversion specifiers:
 
-u
-o
-x
+u : unsigned int conversion
+o : octal conversion
+x : hexa
 X
