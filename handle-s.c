@@ -6,7 +6,7 @@
  */
 int handle_s(va_list args)
 {
-	int char_count, i = 0;
+	int char_count, i;
 	char *string;
 
 	string = va_arg(args, char *);
@@ -16,11 +16,10 @@ int handle_s(va_list args)
 	}
 	else
 	{
-		char_count = strlen(string);
-		while (i < char_count)
+		char_count = strlen(s);
+		for (i = 0; i < char_count; i++)
 		{
 			_putchar(string[i]);
-			i++;
 		}
 		return (char_count);
 	}
