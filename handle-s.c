@@ -14,7 +14,7 @@ int handle_s(va_list args)
 	{
 		return (-1);
 	}
-	else 
+	else
 	{
 		char_count = strlen(string);
 		while (i < char_count)
