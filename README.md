@@ -16,7 +16,7 @@ s
 Task 1 :
 handling the conversions:
 d
-i
+i : intiger conversion
 
 Task 2 :
 handling the specifier :
@@ -27,5 +27,5 @@ Handling the conversion specifiers:
 
 u : unsigned int conversion
 o : octal conversion
-x : hexa
+x : hexadecimal
 X

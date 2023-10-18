@@ -2,7 +2,7 @@
 /**
  * _printf - a function that mimics the standard lib function printf.
  * @format: pointer to a string.
- * Return: an integer.
+ * Return: an integer on success.
  */
 int _printf(const char *format, ...)
 {
