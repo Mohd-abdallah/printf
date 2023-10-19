@@ -20,6 +20,7 @@ int handle_oct(va_list args);
 
 /* Macros */
 
+#define BUFF_SIZE 1024
 
 
 
