@@ -13,10 +13,10 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 int handle_d(va_list args);
 int handle_i(va_list args);
-int convert_to_binary(int n);
 int handle_s(va_list args);
+int handle_c(va_list args);
+int handle_percentage(const char *format);
 int handle_oct(va_list args);
-
 
 /* Macros */
 
@@ -25,7 +25,11 @@ int handle_oct(va_list args);
 
 
 /* Structures */
-
+typedef struct print_function
+{
+	char *str;
+	int (*f)(va_list);
+} pf;
 
 
 #endif

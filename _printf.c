@@ -7,7 +7,6 @@
 int _printf(const char *format, ...)
 {
 	int char_count = 0;
-	char character;
 	va_list args;
 
 	va_start(args, format);
@@ -24,22 +23,15 @@ int _printf(const char *format, ...)
 		{
 			format++;
 			if (*format == '%')
-			{
-				write(1, format, 1);
-				char_count++;
-			}
+				char_count += handle_percentage(format);
 			else if (*format == 'c')
-			{
-				character = va_arg(args, int);
-				write(1, &character, 1);
-				char_count++;
-			}
+				char_count += handle_c(args);
 			else if (*format == 's')
-				handle_s(args);
+				char_count += handle_s(args);
 			else if (*format == 'd')
-				handle_d(args);
+				char_count += handle_d(args);
 			else if (*format == 'i')
-				handle_d(args);
+				char_count += handle_i(args);
 		}
 		format++;
 	}
