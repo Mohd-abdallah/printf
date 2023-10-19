@@ -2,7 +2,7 @@
 /**
  * _printf - a function that mimics the standard lib function printf.
  * @format: pointer to a string.
- * Return: an integer on success.
+ * Return: an integer.
  */
 int _printf(const char *format, ...)
 {
@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 			else if (*format == 'd')
 				handle_d(args);
 			else if (*format == 'i')
-				handle_i(args);
+				handle_d(args);
 		}
 		format++;
 	}

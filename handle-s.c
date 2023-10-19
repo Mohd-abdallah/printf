@@ -21,7 +21,6 @@ int handle_s(va_list args)
 		{
 			_putchar(string[i]);
 		}
-		return (char_count);
 	}
-
+	return (char_count);
 }

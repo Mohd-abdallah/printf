@@ -36,8 +36,8 @@ int handle_d(va_list args)
 			power = power / 10;
 			char_count++;
 		}
-		_putchar(l + '0');
 	}
+	_putchar(l + '0');
 	return (char_count);
 }
 
@@ -79,7 +79,7 @@ int handle_i(va_list args)
 			power = power / 10;
 			char_count++;
 		}
-		_putchar(l + '0');
 	}
+	_putchar(l + '0');
 	return (char_count);
 }
