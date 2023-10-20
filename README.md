@@ -11,26 +11,22 @@ A function called _printf which emulates the standared function printf, that pro
 * format is a character string. The format string is composed of zero or more directives.
 
 
+### The following conversion specifiers has been handled
 
-Task 0 :
-handling the specifiers :
-c : character specifier
-s : string specifies
-% : print mod sign
+| Conversion Specifier        | Description           |
+| ------------- |:-------------:|
+| %c | Prints a character |
+| %s | Prints a string      |
+| %% | Prints literal percent sign      |
+| %d | Prints an integer |
+| %i | A decimal integer |
+| %r "Custom" | prints the reversed string |
 
-Task 1 :
-handling the conversions:
-d
-i : intiger conversion
 
-Task 2 :
-handling the specifier :
-b : binary conversion
 
-Task 3 :
-Handling the conversion specifiers:
-
-u : unsigned int conversion
-o : octal conversion
-x : hexadecimal
-X
+### The following has not been handled
+* flag characters
+* field width
+* precision
+* length modifiers
+* Buffer
