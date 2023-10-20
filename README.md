@@ -1,11 +1,16 @@
-**Group project 0x11. C - printf
+# Group project 0x11. C - printf
 
-Team Members :
-1- Mohammed Abdallah
-2- Assma Hamad
+### Team Members :
+* Mohammed Abdallah
+* Assma Hamad
 
-Project description : ------------------
-A function called _printf which emulates the standared function printf.
+### Project description : ------------------
+A function called _printf which emulates the standared function printf, that produces output according to a format and returnsthe number of characters printed (excluding the null byte used to end output to strings)
+* Prototype: int _printf(const char *format, ...);
+* write output to stdout, the standard output stream.
+* format is a character string. The format string is composed of zero or more directives.
+
+
 
 Task 0 :
 handling the specifiers :
