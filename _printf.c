@@ -32,6 +32,8 @@ int _printf(const char *format, ...)
 				char_count += handle_d(args);
 			else if (*format == 'i')
 				char_count += handle_i(args);
+			else if (*format == 'r')
+				char_count += handle_reverse(args);
 		}
 		format++;
 	}

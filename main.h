@@ -16,7 +16,8 @@ int handle_i(va_list args);
 int handle_s(va_list args);
 int handle_c(va_list args);
 int handle_percentage(const char *format);
-int handle_oct(va_list args);
+int handle_reverse(va_list args);
+
 
 /* Macros */
 
@@ -25,11 +26,6 @@ int handle_oct(va_list args);
 
 
 /* Structures */
-typedef struct print_function
-{
-	char *str;
-	int (*f)(va_list);
-} pf;
 
 
 #endif
